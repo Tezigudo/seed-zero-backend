@@ -19,4 +19,4 @@ def test_question2():
 
 def test_question3():
     correct_path = list(filter(lambda route: os.getenv('ANSWER3', default="unknown") in route.path, app.routes))
-    assert len(correct_path) > 0
+    assert correct_path
